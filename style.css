@@ -4,32 +4,40 @@ body{
     background-color: rgb(37, 35, 35);
     color: white;
 }
-.vermelho{
-    height: 250px;
+
+div{
+    display: block;
+}
+
+.zona{
+    min-height: 250px;
+    border: solid  black 1px;
+}
+
+#vermelho{
     background-color: red;
-    padding: 10px;
-    border: solid 1px;
-    border-color: black;
 }
-.verde{
-    height: 250px;
+
+#verde{
     background-color: green;
-    padding: 10px;
-    border: solid 1px;
-    border-color: black;
 }
-.rosa{
-    height: 250px;
+
+#rosa{
     background-color: pink;
-    padding: 10px;
-    border: solid 1px;
-    border-color: black;
 }
+
 .arrastar{
-    height: 50px;
-    background-color: rgb(160, 160, 221);
-    padding: 10px;
-    border: solid 1px;
-    border-color: black;
-    margin-top: 20px;
+    background-color: #1A1A1C;
+    padding: 16px;
+    box-shadow: 0 2px 2px -1px #FD951Fcc;
+    width: 250px;
+    margin: 25px 0;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 1em;
+    color: white;
+}
+
+.is-dragging{
+    background-color: white;
 }
