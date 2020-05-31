@@ -10,10 +10,16 @@
     <!-- O defer serve p/ carregar o script aós a pag carregar -->
     <script type="text/javascript" src="scripts.js " defer></script>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
@@ -25,27 +31,31 @@
 <body>
 
     <div class="container">
-        <h2 class="text-center">É nós na fita ladrão</h2>
+        <h2 class="text-center text-white">É nós na fita ladrão</h2>
 
-        <div class="row">
-            <div id="vermelho" class="col-4 vermelho soltar zona">
-                
+        <div class="row justify-content-between">
+            <!-- Coloque no ID o mesmo nome do data-value usado nos cards -->
+            <div id="vermelho" class="col-md-3 vermelho soltar zona">
+                <h5 class="text-center">Solte os vermelhos aqui</h5>
             </div>
-            <div id="verde" class="col-4 verde soltar zona">
-                
+            <div id="verde" class="col-md-3 verde soltar zona">
+                <h5 class="text-center">Solte os verdes aqui</h5>
             </div>
-            <div id="rosa" class="col-4 rosa soltar zona">
-                
+            <div id="rosa" class="col-md-3 rosa soltar zona">
+                <h5 class="text-center">Solte os rosas aqui</h5>
             </div>
+
+
         </div>
-
+        <hr class="bg-light">
         <div class="row soltar cold-12">
-            <div class="col-2 arrastar text-center" draggable="true">vermelho</div>
-            <div class="col-2 arrastar text-center" draggable="true">rosa</div>
-            <div class="col-2 arrastar text-center" draggable="true">vermelho</div>
-            <div class="col-2 arrastar text-center" draggable="true">verde</div>
-            <div class="col-2 arrastar text-center" draggable="true">rosa</div>
-            <div class="col-2 arrastar text-center" draggable="true">verde</div>
+            <!-- Coloque no data-value o mesmo nome do id usado na zona -->
+            <div data-value='vermelho' class="col-2 arrastar text-center" draggable="true">vermelho</div>
+            <div data-value='rosa' class="col-2 arrastar text-center" draggable="true">rosa</div>
+            <div data-value='vermelho' class="col-2 arrastar text-center" draggable="true">vermelho</div>
+            <div data-value='verde' class="col-2 arrastar text-center" draggable="true">verde</div>
+            <div data-value='rosa' class="col-2 arrastar text-center" draggable="true">rosa</div>
+            <div data-value='verde'class="col-2 arrastar text-center" draggable="true">verde</div>
         </div>
     </div>
 

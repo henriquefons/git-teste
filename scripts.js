@@ -10,6 +10,8 @@ cards.forEach(arrasta  => {
 function dragstart(){
     this.classList.add('is-dragging')
     console.log(this.classList);
+    console.log(this.getAttribute('data-value'));
+    
     
 }
 
@@ -50,9 +52,14 @@ function dragover() {
 
 //funcao que solta na zona
 function dragleave() {
+    //comando para remover o col-2 e colocar no padrao de tamanho da zona
+    const cardBeingDragged = document.querySelector('.is-dragging')  
+    cardBeingDragged.classList.remove('col-2')
+    cardBeingDragged.classList.add('bg-light')
 
 }
 
 
 function drop() {
+    
 }

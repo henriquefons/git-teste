@@ -1,8 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: rgb(37, 35, 35);
-    color: white;
+    background-color: rgb(37, 35, 35) !important;
 }
 
 div{
@@ -11,6 +10,7 @@ div{
 
 .zona{
     min-height: 250px;
+    width: auto;
     border: solid  black 1px;
 }
 
@@ -27,15 +27,14 @@ div{
 }
 
 .arrastar{
-    background-color: #1A1A1C;
+    background-color: rgb(105, 98, 32);
     padding: 16px;
-    box-shadow: 0 2px 2px -1px #FD951Fcc;
-    width: 250px;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.8);
+    width: auto;
     margin: 25px 0;
     border-radius: 4px;
     font-weight: 600;
     font-size: 1em;
-    color: white;
 }
 
 .is-dragging{
