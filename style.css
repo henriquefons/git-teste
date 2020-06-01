@@ -38,5 +38,6 @@ div{
 }
 
 .is-dragging{
+    cursor: move !important;
     background-color: white;
 }

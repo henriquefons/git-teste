@@ -36,8 +36,7 @@ function dragenter() {
 }
 
 //funcao que fica da zona
-function dragover() {
-    console.log("teste");   
+function dragover() {  
     //Salvador os dados do card na Constante cardBeingDragged
     const cardBeingDragged = document.querySelector('.is-dragging')
     //Verifica se o data-value do card é igual ao id da zona
@@ -48,7 +47,7 @@ function dragover() {
 
 //funcao que solta na zona
 function dragleave() {
-    
+
     const cardBeingDragged = document.querySelector('.is-dragging')
     //Verifica se o data-value do card é igual ao id da zona
     if (cardBeingDragged.getAttribute('data-value') == this.id) {
@@ -56,11 +55,11 @@ function dragleave() {
         cardBeingDragged.classList.remove('col-2')
         cardBeingDragged.classList.add('bg-light')
     }
-
 }
 
 // Enquanto esta segurando
 function drop() {
+    console.log('soltou');
     
     
 }
